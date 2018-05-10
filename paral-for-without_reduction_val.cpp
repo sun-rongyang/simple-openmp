@@ -11,7 +11,7 @@ int main(void)
 
   int sum = 0;
 
-  #pragma omp parallel for
+  #pragma omp parallel for 
   for (int i = 0; i < 9; i++) {
     sum += 1;
     paral_draw(to_string(sum), omp_get_thread_num(), 0);
