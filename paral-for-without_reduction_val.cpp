@@ -9,7 +9,7 @@ int main(void)
   print_header(omp_get_max_threads());
   cout << endl;
 
-  int sum = 0;
+  int sum = 10;
 
   #pragma omp parallel for 
   for (int i = 0; i < 9; i++) {
