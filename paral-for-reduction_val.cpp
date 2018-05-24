@@ -10,6 +10,8 @@ int main(void)
   cout << endl;
 
   int sum = 10;
+  paral_draw(to_string(sum), omp_get_thread_num(), 0);
+  cout << endl;
 
   #pragma omp parallel for reduction(+: sum)
   for (int i = 0; i < 9; i++) {
